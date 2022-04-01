@@ -16,6 +16,7 @@
 		3B946F8327F0C4D00018B4A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B946F8127F0C4D00018B4A8 /* LaunchScreen.storyboard */; };
 		3B946F8B27F0C5140018B4A8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B946F8A27F0C5140018B4A8 /* GoogleService-Info.plist */; };
 		3B946F8E27F0CF330018B4A8 /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B946F8D27F0CF330018B4A8 /* UIColor-Extension.swift */; };
+		3BBE340627F602EC00C6C676 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBE340527F602EC00C6C676 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		3B946F8427F0C4D00018B4A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B946F8A27F0C5140018B4A8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3B946F8D27F0CF330018B4A8 /* UIColor-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
+		3BBE340527F602EC00C6C676 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B63ED6C3E33612A15031A4BD /* Pods_ramentabetai.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ramentabetai.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5EF947155B7BB9DB6F9CA40 /* Pods-ramentabetai.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ramentabetai.debug.xcconfig"; path = "Target Support Files/Pods-ramentabetai/Pods-ramentabetai.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				3B946F7627F0C4CD0018B4A8 /* AppDelegate.swift */,
+				3BBE340527F602EC00C6C676 /* LoginViewController.swift */,
 				3B946F7827F0C4CD0018B4A8 /* SceneDelegate.swift */,
 				3B946F7A27F0C4CD0018B4A8 /* SignUpViewController.swift */,
 				3B946F8C27F0CF330018B4A8 /* Extension */,
@@ -223,6 +226,7 @@
 				3B946F7B27F0C4CD0018B4A8 /* SignUpViewController.swift in Sources */,
 				3B946F8E27F0CF330018B4A8 /* UIColor-Extension.swift in Sources */,
 				3B946F7727F0C4CD0018B4A8 /* AppDelegate.swift in Sources */,
+				3BBE340627F602EC00C6C676 /* LoginViewController.swift in Sources */,
 				3B946F7927F0C4CD0018B4A8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

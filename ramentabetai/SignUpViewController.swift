@@ -19,6 +19,8 @@ class SignUpViewController: UIViewController {
         super.viewDidLoad()
         
         registerButton.layer.cornerRadius = 10
+        registerButton.isEnabled = false
+        registerButton.backgroundColor = UIColor.rgb(red: 255, green: 221, blue: 187)
         
         emailTextField.delegate = self
         passwordTextField.delegate = self
