@@ -8,6 +8,7 @@
 import UIKit
 import FirebaseAuth
 import FirebaseFirestore
+import PKHUD
 
 class SignUpViewController: UIViewController {
     @IBOutlet weak var registerButton: UIButton!

@@ -7,6 +7,8 @@
 
 import UIKit
 import Firebase
+import FirebaseAuth
+import PKHUD
 
 class LoginViewController: UIViewController {
     
@@ -29,13 +31,34 @@ class LoginViewController: UIViewController {
         guard let email = emailTextField.text else {return}
         guard let password = passwordTextField.text else {return}
         
-        Auth.auth().signIn(withEmail: email, password: password) {(res, err) in
+        login(email: email, password: password)
+    }
+    
+    func login(email: String, password: String) {
+        Auth.auth().signIn(withEmail: email, password: password) { (res, err) in
             if let err = err {
-                print("ログイン情報の取得に失敗しました")
-                return
+                if let errCode = AuthErrorCode(rawValue: err._code) {
+                    var errMessage:String
+                        switch errCode {
+                        case .wrongPassword:
+                            errMessage = "メールアドレスが違います。"
+                        case .userNotFound:
+                            errMessage = "ユーザがいません。"
+                        default:
+                            errMessage = "エラーが起きました。\nしばらくしてから再度お試しください。"
+                        }
+                    self.showAlert(title: "ログインできませんでした", message: errMessage)
+                    }
             }
+            print("ログインに成功しました")
         }
     }
+    
+    func showAlert(title: String, message: String?) {
+              let alertVC = UIAlertController(title: title, message: message, preferredStyle: .alert)
+              alertVC.addAction(UIAlertAction(title: "OK", style: .default,handler: nil))
+              self.present(alertVC, animated: true, completion: nil)
+          }
     
     @IBAction func tappedNotHaveAccountButton(_ sender: Any) {
     }

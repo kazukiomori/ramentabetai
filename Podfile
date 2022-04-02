@@ -11,4 +11,5 @@ target 'ramentabetai' do
   pod 'Firebase/Firestore'
   pod 'Firebase/Storage'
 
+  pod 'PKHUD'
 end

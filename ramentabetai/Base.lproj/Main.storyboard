@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OKA-UN-Re8">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -151,25 +151,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ログイン" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7yz-21-23f">
-                                <rect key="frame" x="84" y="152" width="241" height="72"/>
+                                <rect key="frame" x="86.5" y="152" width="241" height="72"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="slL-Pv-hwh">
-                                <rect key="frame" x="60" y="264" width="289" height="150"/>
+                                <rect key="frame" x="60" y="264" width="294" height="150"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="pFl-6v-jYN">
-                                        <rect key="frame" x="0.0" y="0.0" width="289" height="62.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="294" height="62.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iHq-AI-7ji">
-                                                <rect key="frame" x="0.0" y="0.0" width="289" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="294" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="メールアドレス" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dow-hY-cdJ">
-                                                <rect key="frame" x="0.0" y="20.5" width="289" height="42"/>
+                                                <rect key="frame" x="0.0" y="20.5" width="294" height="42"/>
                                                 <color key="backgroundColor" red="0.88697116050000002" green="0.91163635249999997" blue="0.96130555870000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -177,16 +177,16 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="nv5-NT-Yjc">
-                                        <rect key="frame" x="0.0" y="87.5" width="289" height="62.5"/>
+                                        <rect key="frame" x="0.0" y="87.5" width="294" height="62.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="パスワード" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="miA-ml-EvX">
-                                                <rect key="frame" x="0.0" y="0.0" width="289" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="294" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="パスワード" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ee5-Or-MvL">
-                                                <rect key="frame" x="0.0" y="20.5" width="289" height="42"/>
+                                                <rect key="frame" x="0.0" y="20.5" width="294" height="42"/>
                                                 <color key="backgroundColor" red="0.88697116050000002" green="0.91163635249999997" blue="0.96130555870000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
@@ -199,7 +199,7 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JOp-vZ-tPW">
-                                <rect key="frame" x="104.5" y="454" width="200" height="40"/>
+                                <rect key="frame" x="107" y="454" width="200" height="40"/>
                                 <color key="backgroundColor" red="0.9450250268" green="0.59778374860000005" blue="0.083874831339999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="Cjr-fk-38a"/>
@@ -209,12 +209,11 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="tappedLoginButton:" destination="OKA-UN-Re8" eventType="touchUpInside" id="yRa-S9-tGy"/>
-                                    <action selector="tappedRegisterButton:" destination="OKA-UN-Re8" eventType="touchUpInside" id="eKq-IP-gWy"/>
+                                    <action selector="tappedLoginButton:" destination="OKA-UN-Re8" eventType="touchUpInside" id="Jtb-MX-GX7"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vKH-Os-N6c">
-                                <rect key="frame" x="60" y="544" width="289" height="30"/>
+                                <rect key="frame" x="60" y="544" width="294" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="アカウントをお持ちでない方は" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N01-bq-fGy">
                                         <rect key="frame" x="0.0" y="0.0" width="243" height="30"/>
@@ -223,7 +222,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GHN-LM-jRp">
-                                        <rect key="frame" x="243" y="0.0" width="46" height="30"/>
+                                        <rect key="frame" x="243" y="0.0" width="51" height="30"/>
                                         <state key="normal" title="コチラ"/>
                                         <connections>
                                             <action selector="tappedNotHaveAccountButton:" destination="OKA-UN-Re8" eventType="touchUpInside" id="Ycb-r1-bFR"/>
@@ -232,7 +231,6 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="naW-hn-ngq"/>
-                                    <constraint firstAttribute="width" constant="320" id="sdu-yJ-Dzh"/>
                                 </constraints>
                             </stackView>
                         </subviews>
@@ -255,7 +253,7 @@
                     </view>
                     <connections>
                         <outlet property="emailTextField" destination="Dow-hY-cdJ" id="1dg-yE-1oi"/>
-                        <outlet property="loginButton" destination="JOp-vZ-tPW" id="cpr-81-b0d"/>
+                        <outlet property="loginButton" destination="JOp-vZ-tPW" id="nzb-02-wUK"/>
                         <outlet property="passwordTextField" destination="ee5-Or-MvL" id="0v6-ft-ROs"/>
                     </connections>
                 </viewController>

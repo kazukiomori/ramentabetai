@@ -14,13 +14,13 @@
             filePath = "ramentabetai/SignUpViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
             landmarkName = "singUp(email:password:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "FE94965F-23B0-497F-B220-6139F5D494FA - 47b7f911588b49fc"
+                  uuid = "FE94965F-23B0-497F-B220-6139F5D494FA - 47b7f911588b4963"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -30,12 +30,12 @@
                   urlString = "file:///Users/kazukiomori/Desktop/Swift/ramentabetai/ramentabetai/SignUpViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "41"
-                  endingLineNumber = "41"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
                   offsetFromSymbolStart = "50">
                </Location>
                <Location
-                  uuid = "FE94965F-23B0-497F-B220-6139F5D494FA - 4f84a5ae72a68ce9"
+                  uuid = "FE94965F-23B0-497F-B220-6139F5D494FA - 4f84a5ae72a68c74"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -45,9 +45,9 @@
                   urlString = "file:///Users/kazukiomori/Desktop/Swift/ramentabetai/ramentabetai/SignUpViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "42"
-                  endingLineNumber = "42"
-                  offsetFromSymbolStart = "355">
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "226">
                </Location>
             </Locations>
          </BreakpointContent>
