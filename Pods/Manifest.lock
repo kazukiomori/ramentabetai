@@ -437,6 +437,7 @@ PODS:
     - GoogleUtilities/Environment (~> 7.2)
     - nanopb (~> 2.30908.0)
     - PromisesObjC (< 3.0, >= 1.2)
+  - GooglePlaces (6.1.1)
   - GoogleUtilities/AppDelegateSwizzler (7.7.0):
     - GoogleUtilities/Environment
     - GoogleUtilities/Logger
@@ -495,6 +496,7 @@ DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Firestore
   - Firebase/Storage
+  - GooglePlaces
   - PKHUD
 
 SPEC REPOS:
@@ -511,6 +513,7 @@ SPEC REPOS:
     - FirebaseStorage
     - GoogleAppMeasurement
     - GoogleDataTransport
+    - GooglePlaces
     - GoogleUtilities
     - "gRPC-C++"
     - gRPC-Core
@@ -533,6 +536,7 @@ SPEC CHECKSUMS:
   FirebaseStorage: 32ab036ce11eb7e94c279a238a65efa24f81593d
   GoogleAppMeasurement: 71156240babd3cc6ced03e0d54816f01a880c730
   GoogleDataTransport: 629c20a4d363167143f30ea78320d5a7eb8bd940
+  GooglePlaces: 9c1f3baa75191b94dfc12b80a801292e03977f73
   GoogleUtilities: e0913149f6b0625b553d70dae12b49fc62914fd1
   "gRPC-C++": 13d8ccef97d5c3c441b7e3c529ef28ebee86fad2
   gRPC-Core: 4afa11bfbedf7cdecd04de535a9e046893404ed5
@@ -542,6 +546,6 @@ SPEC CHECKSUMS:
   PKHUD: 98f3e4bc904b9c916f1c5bb6d765365b5357291b
   PromisesObjC: 68159ce6952d93e17b2dfe273b8c40907db5ba58
 
-PODFILE CHECKSUM: 456a0c5119efc13a9f3de09cde4711c854a371e8
+PODFILE CHECKSUM: f9aaaeca57a12514636b0afdd6246c2084b5ecb8
 
 COCOAPODS: 1.11.2

@@ -40,14 +40,17 @@ class LoginViewController: UIViewController {
                 if let errCode = AuthErrorCode(rawValue: err._code) {
                     var errMessage:String
                         switch errCode {
-                        case .wrongPassword:
+                        case .invalidEmail:
                             errMessage = "メールアドレスが違います。"
+                        case .wrongPassword:
+                            errMessage = "パスワードが違います。"
                         case .userNotFound:
                             errMessage = "ユーザがいません。"
                         default:
                             errMessage = "エラーが起きました。\nしばらくしてから再度お試しください。"
                         }
                     self.showAlert(title: "ログインできませんでした", message: errMessage)
+                    return
                     }
             }
             print("ログインに成功しました")

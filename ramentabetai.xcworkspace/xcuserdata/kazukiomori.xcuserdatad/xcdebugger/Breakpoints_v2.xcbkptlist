@@ -7,49 +7,189 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "FE94965F-23B0-497F-B220-6139F5D494FA"
+            uuid = "714A68EC-CE7A-4E1A-9B88-136C8390933E"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ramentabetai/SignUpViewController.swift"
+            filePath = "ramentabetai/LoginViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
-            landmarkName = "singUp(email:password:)"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "login(email:password:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "341217C4-D05E-4AB6-9332-0FFD51C66364"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ramentabetai/ViewModel/ShopViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "3"
+            endingLineNumber = "3"
+            landmarkName = "ShopViewModel"
+            landmarkType = "3">
             <Locations>
                <Location
-                  uuid = "FE94965F-23B0-497F-B220-6139F5D494FA - 47b7f911588b4963"
+                  uuid = "341217C4-D05E-4AB6-9332-0FFD51C66364 - 850ee4f8c7b4e67a"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "ramentabetai.SignUpViewController.singUp(email: Swift.String, password: Swift.String) -&gt; ()"
+                  symbolName = "ramentabetai.ShopViewModel.deinit"
                   moduleName = "ramentabetai"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kazukiomori/Desktop/Swift/ramentabetai/ramentabetai/SignUpViewController.swift"
+                  urlString = "file:///Users/kazukiomori/Desktop/Swift/ramentabetai/ramentabetai/ViewModel/ShopViewModel.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "44"
-                  endingLineNumber = "44"
-                  offsetFromSymbolStart = "50">
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
                </Location>
                <Location
-                  uuid = "FE94965F-23B0-497F-B220-6139F5D494FA - 4f84a5ae72a68c74"
+                  uuid = "341217C4-D05E-4AB6-9332-0FFD51C66364 - 428b6244db02aa7d"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRAuthDataResult&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in ramentabetai.SignUpViewController.singUp(email: Swift.String, password: Swift.String) -&gt; ()"
+                  symbolName = "ramentabetai.ShopViewModel.__deallocating_deinit"
                   moduleName = "ramentabetai"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kazukiomori/Desktop/Swift/ramentabetai/ramentabetai/SignUpViewController.swift"
+                  urlString = "file:///Users/kazukiomori/Desktop/Swift/ramentabetai/ramentabetai/ViewModel/ShopViewModel.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "45"
-                  endingLineNumber = "45"
-                  offsetFromSymbolStart = "226">
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "341217C4-D05E-4AB6-9332-0FFD51C66364 - 88cc00cd5e35acba"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ramentabetai.ShopViewModel.__allocating_init() -&gt; ramentabetai.ShopViewModel"
+                  moduleName = "ramentabetai"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kazukiomori/Desktop/Swift/ramentabetai/ramentabetai/ViewModel/ShopViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "17">
+               </Location>
+               <Location
+                  uuid = "341217C4-D05E-4AB6-9332-0FFD51C66364 - fa739589a7132f4e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ramentabetai.ShopViewModel.init() -&gt; ramentabetai.ShopViewModel"
+                  moduleName = "ramentabetai"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kazukiomori/Desktop/Swift/ramentabetai/ramentabetai/ViewModel/ShopViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "4"
+                  endingLineNumber = "4"
+                  offsetFromSymbolStart = "26">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F1A1195F-A7D4-47FC-A0F8-E3FD6A442528"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ramentabetai/Model/HotpepperAPI.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "10"
+            endingLineNumber = "10"
+            landmarkName = "HotpepperAPI"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "F1A1195F-A7D4-47FC-A0F8-E3FD6A442528 - ad04a3644765338"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ramentabetai.HotpepperAPI.deinit"
+                  moduleName = "ramentabetai"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kazukiomori/Desktop/Swift/ramentabetai/ramentabetai/Model/HotpepperAPI.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "F1A1195F-A7D4-47FC-A0F8-E3FD6A442528 - f9a9a09bfa75b85c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ramentabetai.HotpepperAPI.__deallocating_deinit"
+                  moduleName = "ramentabetai"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kazukiomori/Desktop/Swift/ramentabetai/ramentabetai/Model/HotpepperAPI.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "F1A1195F-A7D4-47FC-A0F8-E3FD6A442528 - 7b373ff3dc30fa6d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ramentabetai.HotpepperAPI.__allocating_init() -&gt; ramentabetai.HotpepperAPI"
+                  moduleName = "ramentabetai"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kazukiomori/Desktop/Swift/ramentabetai/ramentabetai/Model/HotpepperAPI.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "17">
+               </Location>
+               <Location
+                  uuid = "F1A1195F-A7D4-47FC-A0F8-E3FD6A442528 - c1a3aca08e9a09f3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ramentabetai.HotpepperAPI.init() -&gt; ramentabetai.HotpepperAPI"
+                  moduleName = "ramentabetai"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kazukiomori/Desktop/Swift/ramentabetai/ramentabetai/Model/HotpepperAPI.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "10"
+                  endingLineNumber = "10"
+                  offsetFromSymbolStart = "24">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "92397D9B-9C3D-42F5-9BAB-01F863401A06"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ramentabetai/ViewModel/ShopViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "7"
+            endingLineNumber = "7"
+            landmarkName = "getShopData(completion:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

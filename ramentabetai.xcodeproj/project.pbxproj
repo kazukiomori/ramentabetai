@@ -17,6 +17,11 @@
 		3B946F8B27F0C5140018B4A8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B946F8A27F0C5140018B4A8 /* GoogleService-Info.plist */; };
 		3B946F8E27F0CF330018B4A8 /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B946F8D27F0CF330018B4A8 /* UIColor-Extension.swift */; };
 		3BBE340627F602EC00C6C676 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBE340527F602EC00C6C676 /* LoginViewController.swift */; };
+		3BD6643627FB1E6A00B86765 /* HotpepperAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD6643427FB1E6A00B86765 /* HotpepperAPI.swift */; };
+		3BD6643727FB1E6A00B86765 /* ShopModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD6643527FB1E6A00B86765 /* ShopModel.swift */; };
+		3BD6643A27FB1EC500B86765 /* ShopViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD6643927FB1EC500B86765 /* ShopViewModel.swift */; };
+		3BEC494C27FB4DDA001D40C0 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEC494B27FB4DD9001D40C0 /* SearchViewController.swift */; };
+		3BEC494E27FB4DEB001D40C0 /* ShopTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEC494D27FB4DEB001D40C0 /* ShopTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +37,11 @@
 		3B946F8A27F0C5140018B4A8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3B946F8D27F0CF330018B4A8 /* UIColor-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
 		3BBE340527F602EC00C6C676 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3BD6643427FB1E6A00B86765 /* HotpepperAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotpepperAPI.swift; sourceTree = "<group>"; };
+		3BD6643527FB1E6A00B86765 /* ShopModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopModel.swift; sourceTree = "<group>"; };
+		3BD6643927FB1EC500B86765 /* ShopViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopViewModel.swift; sourceTree = "<group>"; };
+		3BEC494B27FB4DD9001D40C0 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		3BEC494D27FB4DEB001D40C0 /* ShopTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopTableViewCell.swift; sourceTree = "<group>"; };
 		B63ED6C3E33612A15031A4BD /* Pods_ramentabetai.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ramentabetai.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5EF947155B7BB9DB6F9CA40 /* Pods-ramentabetai.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ramentabetai.debug.xcconfig"; path = "Target Support Files/Pods-ramentabetai/Pods-ramentabetai.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,9 +79,13 @@
 		3B946F7527F0C4CD0018B4A8 /* ramentabetai */ = {
 			isa = PBXGroup;
 			children = (
+				3BD6643827FB1EC500B86765 /* ViewModel */,
+				3BD6643327FB1E6A00B86765 /* Model */,
 				3B946F7627F0C4CD0018B4A8 /* AppDelegate.swift */,
 				3BBE340527F602EC00C6C676 /* LoginViewController.swift */,
 				3B946F7827F0C4CD0018B4A8 /* SceneDelegate.swift */,
+				3BEC494B27FB4DD9001D40C0 /* SearchViewController.swift */,
+				3BEC494D27FB4DEB001D40C0 /* ShopTableViewCell.swift */,
 				3B946F7A27F0C4CD0018B4A8 /* SignUpViewController.swift */,
 				3B946F8C27F0CF330018B4A8 /* Extension */,
 				3B946F7C27F0C4CD0018B4A8 /* Main.storyboard */,
@@ -89,6 +103,23 @@
 				3B946F8D27F0CF330018B4A8 /* UIColor-Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		3BD6643327FB1E6A00B86765 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3BD6643427FB1E6A00B86765 /* HotpepperAPI.swift */,
+				3BD6643527FB1E6A00B86765 /* ShopModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3BD6643827FB1EC500B86765 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3BD6643927FB1EC500B86765 /* ShopViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		88A01E60ADC0611285E00457 /* Frameworks */ = {
@@ -120,6 +151,7 @@
 				3B946F7027F0C4CD0018B4A8 /* Frameworks */,
 				3B946F7127F0C4CD0018B4A8 /* Resources */,
 				CB831E05EF6591C634D218A8 /* [CP] Embed Pods Frameworks */,
+				98B3A57127D37F275FAC887A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -199,6 +231,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		98B3A57127D37F275FAC887A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ramentabetai/Pods-ramentabetai-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ramentabetai/Pods-ramentabetai-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ramentabetai/Pods-ramentabetai-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		CB831E05EF6591C634D218A8 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -223,10 +272,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BD6643727FB1E6A00B86765 /* ShopModel.swift in Sources */,
 				3B946F7B27F0C4CD0018B4A8 /* SignUpViewController.swift in Sources */,
 				3B946F8E27F0CF330018B4A8 /* UIColor-Extension.swift in Sources */,
+				3BEC494C27FB4DDA001D40C0 /* SearchViewController.swift in Sources */,
 				3B946F7727F0C4CD0018B4A8 /* AppDelegate.swift in Sources */,
+				3BEC494E27FB4DEB001D40C0 /* ShopTableViewCell.swift in Sources */,
+				3BD6643A27FB1EC500B86765 /* ShopViewModel.swift in Sources */,
 				3BBE340627F602EC00C6C676 /* LoginViewController.swift in Sources */,
+				3BD6643627FB1E6A00B86765 /* HotpepperAPI.swift in Sources */,
 				3B946F7927F0C4CD0018B4A8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

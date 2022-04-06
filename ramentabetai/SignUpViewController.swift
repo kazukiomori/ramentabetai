@@ -43,8 +43,21 @@ class SignUpViewController: UIViewController {
     func singUp(email:String, password:String) {
         Auth.auth().createUser(withEmail: email, password: password) { (res, err) in
             if let err = err {
-                print("登録に失敗しました\(err)")
-                return
+                if let errCode = AuthErrorCode(rawValue: err._code) {
+                    var errMessage:String
+                        switch errCode {
+                        case .emailAlreadyInUse:
+                            errMessage = "このメールアドレスは既に使われています。"
+                        case .invalidEmail:
+                            errMessage = "このメールアドレスは形式が違います。"
+                        case .weakPassword:
+                            errMessage = "パスワードが短いです。（6文字以上入力してください。）"
+                        default:
+                            errMessage = "エラーが起きました。\nしばらくしてから再度お試しください。"
+                        }
+                    LoginViewController().showAlert(title: "アカウントの作成に失敗しました", message: errMessage)
+                    return
+                    }
             }
             self.addUserInfoToDatabase(email: email)
         }
