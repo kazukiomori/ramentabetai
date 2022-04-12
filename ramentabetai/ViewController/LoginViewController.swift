@@ -39,34 +39,33 @@ class LoginViewController: UIViewController {
             if let err = err {
                 if let errCode = AuthErrorCode(rawValue: err._code) {
                     var errMessage:String
-                        switch errCode {
-                        case .invalidEmail:
-                            errMessage = "メールアドレスが違います。"
-                        case .wrongPassword:
-                            errMessage = "パスワードが違います。"
-                        case .userNotFound:
-                            errMessage = "ユーザがいません。"
-                        default:
-                            errMessage = "エラーが起きました。\nしばらくしてから再度お試しください。"
-                        }
+                    switch errCode {
+                    case .invalidEmail:
+                        errMessage = "メールアドレスが違います。"
+                    case .wrongPassword:
+                        errMessage = "パスワードが違います。"
+                    case .userNotFound:
+                        errMessage = "ユーザがいません。"
+                    default:
+                        errMessage = "エラーが起きました。\nしばらくしてから再度お試しください。"
+                    }
                     self.showAlert(title: "ログインできませんでした", message: errMessage)
                     return
-                    }
+                }
             }
             print("ログインに成功しました")
         }
     }
     
     func showAlert(title: String, message: String?) {
-              let alertVC = UIAlertController(title: title, message: message, preferredStyle: .alert)
-              alertVC.addAction(UIAlertAction(title: "OK", style: .default,handler: nil))
-              self.present(alertVC, animated: true, completion: nil)
-          }
+        let alertVC = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alertVC.addAction(UIAlertAction(title: "OK", style: .default,handler: nil))
+        self.present(alertVC, animated: true, completion: nil)
+    }
     
     @IBAction func tappedNotHaveAccountButton(_ sender: Any) {
     }
 }
-
 extension LoginViewController: UITextFieldDelegate {
     func textFieldDidChangeSelection(_ textField: UITextField) {
         let emailIsEmpty = emailTextField.text?.isEmpty ?? true

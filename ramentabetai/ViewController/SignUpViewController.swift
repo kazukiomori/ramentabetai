@@ -111,6 +111,9 @@ class SignUpViewController: UIViewController {
         })
     }
 
+    @IBAction func onTappedHaveAccountButton(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
 }
 
 extension SignUpViewController: UITextFieldDelegate {

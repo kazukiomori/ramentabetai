@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="e4U-gF-ONF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="c3i-Mr-LCi">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -11,7 +11,7 @@
         <!--Sign Up View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="SignUpViewController" customModule="ramentabetai" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="SignUpViewController" customModule="ramentabetai" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -107,6 +107,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WtB-2J-hj4">
                                         <rect key="frame" x="243" y="0.0" width="51" height="30"/>
                                         <state key="normal" title="コチラ"/>
+                                        <connections>
+                                            <action selector="onTappedHaveAccountButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Iv7-ao-Cyu"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -227,6 +230,7 @@
                                         <state key="normal" title="コチラ"/>
                                         <connections>
                                             <action selector="tappedNotHaveAccountButton:" destination="OKA-UN-Re8" eventType="touchUpInside" id="Ycb-r1-bFR"/>
+                                            <segue destination="BYZ-38-t0r" kind="presentation" id="0az-ln-Zub"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -262,37 +266,37 @@
             </objects>
             <point key="canvasLocation" x="796" y="76"/>
         </scene>
-        <!--Item 2-->
+        <!--LikeViewController-->
         <scene sceneID="Fpz-I4-sOV">
             <objects>
-                <viewController id="fWm-Lv-qS6" sceneMemberID="viewController">
+                <viewController title="LikeViewController" modalPresentationStyle="fullScreen" id="fWm-Lv-qS6" customClass="LikeViewController" customModule="ramentabetai" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YEF-wi-Z0G">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="L7P-4v-2yY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="wEr-Oj-fIk"/>
+                    <navigationItem key="navigationItem" title="Like" id="Qtx-5q-L8T"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RZ8-Bj-7yK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4398" y="213"/>
+            <point key="canvasLocation" x="5307.2463768115949" y="212.94642857142856"/>
         </scene>
-        <!--Item 1-->
+        <!--HomeViewController-->
         <scene sceneID="wBT-Oy-sY9">
             <objects>
-                <viewController id="Xe0-Qh-deg" sceneMemberID="viewController">
+                <viewController title="HomeViewController" modalPresentationStyle="fullScreen" id="Xe0-Qh-deg" customClass="HomeViewController" customModule="ramentabetai" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="E8j-Um-81P">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="DFJ-jK-snF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="NXv-V7-uXP"/>
+                    <navigationItem key="navigationItem" title="Home" id="gxM-fO-kdV"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z5v-w5-rVG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4398" y="-395"/>
+            <point key="canvasLocation" x="5305.7971014492759" y="-546.42857142857144"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="o1p-sv-j4r">
@@ -304,8 +308,9 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="Xe0-Qh-deg" kind="relationship" relationship="viewControllers" id="m0o-Ap-abX"/>
-                        <segue destination="fWm-Lv-qS6" kind="relationship" relationship="viewControllers" id="HeX-RB-NhB"/>
+                        <segue destination="2eQ-M2-AAd" kind="relationship" relationship="viewControllers" id="m0o-Ap-abX"/>
+                        <segue destination="hvf-VB-qzC" kind="relationship" relationship="viewControllers" id="HeX-RB-NhB"/>
+                        <segue destination="gDL-9A-f5U" kind="relationship" relationship="viewControllers" id="q7E-cC-qDh"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rUL-nW-HNA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -317,11 +322,11 @@
             <objects>
                 <viewController title="SearchViewController" wantsFullScreenLayout="YES" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="e4U-gF-ONF" customClass="SearchViewController" customModule="ramentabetai" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="40c-p6-SrR">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CgD-0v-385">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="56" width="414" height="703"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="252" id="c2v-KZ-sll" customClass="ShopTableViewCell" customModule="ramentabetai" customModuleProvider="target">
@@ -373,18 +378,78 @@
                             <constraint firstItem="CgD-0v-385" firstAttribute="leading" secondItem="H25-OM-wEJ" secondAttribute="leading" id="kvH-PG-jyd"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="Hn6-am-zub"/>
-                    <navigationItem key="navigationItem" id="76d-eY-Mhr"/>
+                    <navigationItem key="navigationItem" title="Search" id="76d-eY-Mhr"/>
                     <connections>
                         <outlet property="tableView" destination="CgD-0v-385" id="RC9-OU-i39"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ums-4Q-zPl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5162.3188405797109" y="212.94642857142856"/>
+            <point key="canvasLocation" x="5305.7971014492759" y="1000.4464285714286"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="fRU-KV-pPs">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2eQ-M2-AAd" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" selectedImage="house.fill" id="NXv-V7-uXP"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KmU-pm-gsk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Xe0-Qh-deg" kind="relationship" relationship="rootViewController" id="ygC-oF-3qA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="txX-Tg-2GL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4395.652173913044" y="-546.42857142857144"/>
+        </scene>
+        <!--Like-->
+        <scene sceneID="DBw-7k-Yno">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hvf-VB-qzC" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Like" image="heart" catalog="system" id="wEr-Oj-fIk"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="74L-jF-HPw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="fWm-Lv-qS6" kind="relationship" relationship="rootViewController" id="zae-LU-OFc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L12-hq-Tgg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4397.1014492753629" y="212.94642857142856"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="Xkf-Ux-8zL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gDL-9A-f5U" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Search" image="magnifyingglass" catalog="system" id="Hn6-am-zub"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FLo-0b-tPO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="e4U-gF-ONF" kind="relationship" relationship="rootViewController" id="Av3-Dw-jx8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B3v-Hf-Grt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4395.652173913044" y="1000.4464285714286"/>
         </scene>
     </scenes>
     <resources>
+        <image name="heart" catalog="system" width="128" height="109"/>
+        <image name="house" catalog="system" width="128" height="106"/>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
