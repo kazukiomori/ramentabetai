@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B30A10928105B9600ED1F01 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B30A10828105B9600ED1F01 /* User.swift */; };
+		3B30A10D28116CFE00ED1F01 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B30A10C28116CFE00ED1F01 /* ProfileCell.swift */; };
+		3B30A10F28116D0E00ED1F01 /* ProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B30A10E28116D0E00ED1F01 /* ProfileHeader.swift */; };
+		3B30A11128121FA100ED1F01 /* ProfileCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B30A11028121FA000ED1F01 /* ProfileCollectionViewController.swift */; };
+		3B30A11328138A2700ED1F01 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B30A11228138A2600ED1F01 /* Extensions.swift */; };
 		3B715736506FF659D6E80A94 /* Pods_ramentabetai.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63ED6C3E33612A15031A4BD /* Pods_ramentabetai.framework */; };
 		3B946F7727F0C4CD0018B4A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B946F7627F0C4CD0018B4A8 /* AppDelegate.swift */; };
 		3B946F7927F0C4CD0018B4A8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B946F7827F0C4CD0018B4A8 /* SceneDelegate.swift */; };
@@ -20,14 +25,29 @@
 		3BD6643627FB1E6A00B86765 /* HotpepperAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD6643427FB1E6A00B86765 /* HotpepperAPI.swift */; };
 		3BD6643727FB1E6A00B86765 /* ShopModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD6643527FB1E6A00B86765 /* ShopModel.swift */; };
 		3BD6643A27FB1EC500B86765 /* ShopViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD6643927FB1EC500B86765 /* ShopViewModel.swift */; };
+		3BDD821228158A1300D0136A /* ProfileHeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDD821128158A1300D0136A /* ProfileHeaderViewModel.swift */; };
 		3BEC494C27FB4DDA001D40C0 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEC494B27FB4DD9001D40C0 /* SearchViewController.swift */; };
 		3BEC494E27FB4DEB001D40C0 /* ShopTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEC494D27FB4DEB001D40C0 /* ShopTableViewCell.swift */; };
 		3BEC49532805C453001D40C0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEC49522805C453001D40C0 /* HomeViewController.swift */; };
 		3BEC49552805C461001D40C0 /* LikeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEC49542805C461001D40C0 /* LikeViewController.swift */; };
+		3BEC49572805D2FA001D40C0 /* MypageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEC49562805D2FA001D40C0 /* MypageViewController.swift */; };
+		3BEC495B2806F55B001D40C0 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEC495A2806F55B001D40C0 /* ImageUploader.swift */; };
+		3BEC495F28079192001D40C0 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEC495E28079192001D40C0 /* MainTabBarViewController.swift */; };
+		3BEC496128098ED6001D40C0 /* HomeViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEC496028098ED6001D40C0 /* HomeViewTableViewCell.swift */; };
+		3BEC4963280997F4001D40C0 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEC4962280997F4001D40C0 /* PostViewController.swift */; };
+		3BF9EE04280C1F2C00D06661 /* FirebaseStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF9EE03280C1F2C00D06661 /* FirebaseStorage.swift */; };
+		3BF9EE06280E2A0200D06661 /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF9EE05280E2A0200D06661 /* PostService.swift */; };
+		3BF9EE082810463200D06661 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF9EE072810463200D06661 /* UserService.swift */; };
+		3BF9EE0B281046F200D06661 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF9EE0A281046F200D06661 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		22DBF5F3C411702CEB1B89F2 /* Pods-ramentabetai.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ramentabetai.release.xcconfig"; path = "Target Support Files/Pods-ramentabetai/Pods-ramentabetai.release.xcconfig"; sourceTree = "<group>"; };
+		3B30A10828105B9600ED1F01 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		3B30A10C28116CFE00ED1F01 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
+		3B30A10E28116D0E00ED1F01 /* ProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeader.swift; sourceTree = "<group>"; };
+		3B30A11028121FA000ED1F01 /* ProfileCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionViewController.swift; sourceTree = "<group>"; };
+		3B30A11228138A2600ED1F01 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		3B946F7327F0C4CD0018B4A8 /* ramentabetai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ramentabetai.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B946F7627F0C4CD0018B4A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B946F7827F0C4CD0018B4A8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,10 +62,20 @@
 		3BD6643427FB1E6A00B86765 /* HotpepperAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotpepperAPI.swift; sourceTree = "<group>"; };
 		3BD6643527FB1E6A00B86765 /* ShopModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopModel.swift; sourceTree = "<group>"; };
 		3BD6643927FB1EC500B86765 /* ShopViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopViewModel.swift; sourceTree = "<group>"; };
+		3BDD821128158A1300D0136A /* ProfileHeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderViewModel.swift; sourceTree = "<group>"; };
 		3BEC494B27FB4DD9001D40C0 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		3BEC494D27FB4DEB001D40C0 /* ShopTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopTableViewCell.swift; sourceTree = "<group>"; };
 		3BEC49522805C453001D40C0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3BEC49542805C461001D40C0 /* LikeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeViewController.swift; sourceTree = "<group>"; };
+		3BEC49562805D2FA001D40C0 /* MypageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageViewController.swift; sourceTree = "<group>"; };
+		3BEC495A2806F55B001D40C0 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
+		3BEC495E28079192001D40C0 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		3BEC496028098ED6001D40C0 /* HomeViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewTableViewCell.swift; sourceTree = "<group>"; };
+		3BEC4962280997F4001D40C0 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		3BF9EE03280C1F2C00D06661 /* FirebaseStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseStorage.swift; sourceTree = "<group>"; };
+		3BF9EE05280E2A0200D06661 /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
+		3BF9EE072810463200D06661 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		3BF9EE0A281046F200D06661 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B63ED6C3E33612A15031A4BD /* Pods_ramentabetai.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ramentabetai.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5EF947155B7BB9DB6F9CA40 /* Pods-ramentabetai.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ramentabetai.debug.xcconfig"; path = "Target Support Files/Pods-ramentabetai/Pods-ramentabetai.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,6 +92,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B30A10A28116CC500ED1F01 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3B30A10B28116CD500ED1F01 /* Profile */,
+				3BEC494D27FB4DEB001D40C0 /* ShopTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3B30A10B28116CD500ED1F01 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				3B30A10C28116CFE00ED1F01 /* ProfileCell.swift */,
+				3B30A10E28116D0E00ED1F01 /* ProfileHeader.swift */,
+				3B30A11028121FA000ED1F01 /* ProfileCollectionViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		3B946F6A27F0C4CD0018B4A8 = {
 			isa = PBXGroup;
 			children = (
@@ -83,12 +132,15 @@
 		3B946F7527F0C4CD0018B4A8 /* ramentabetai */ = {
 			isa = PBXGroup;
 			children = (
+				3B30A10A28116CC500ED1F01 /* View */,
+				3BF9EE09281046B200D06661 /* Utils */,
+				3BF9EE02280C1F0500D06661 /* Resources */,
+				3BEC49592806F529001D40C0 /* API */,
 				3BEC49512805C422001D40C0 /* ViewController */,
 				3BD6643827FB1EC500B86765 /* ViewModel */,
 				3BD6643327FB1E6A00B86765 /* Model */,
 				3B946F7627F0C4CD0018B4A8 /* AppDelegate.swift */,
 				3B946F7827F0C4CD0018B4A8 /* SceneDelegate.swift */,
-				3BEC494D27FB4DEB001D40C0 /* ShopTableViewCell.swift */,
 				3B946F8C27F0CF330018B4A8 /* Extension */,
 				3B946F7C27F0C4CD0018B4A8 /* Main.storyboard */,
 				3B946F7F27F0C4D00018B4A8 /* Assets.xcassets */,
@@ -102,6 +154,7 @@
 		3B946F8C27F0CF330018B4A8 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				3B30A11228138A2600ED1F01 /* Extensions.swift */,
 				3B946F8D27F0CF330018B4A8 /* UIColor-Extension.swift */,
 			);
 			path = Extension;
@@ -110,8 +163,8 @@
 		3BD6643327FB1E6A00B86765 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				3BD6643427FB1E6A00B86765 /* HotpepperAPI.swift */,
 				3BD6643527FB1E6A00B86765 /* ShopModel.swift */,
+				3B30A10828105B9600ED1F01 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -120,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				3BD6643927FB1EC500B86765 /* ShopViewModel.swift */,
+				3BDD821128158A1300D0136A /* ProfileHeaderViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -132,8 +186,39 @@
 				3B946F7A27F0C4CD0018B4A8 /* SignUpViewController.swift */,
 				3BEC49522805C453001D40C0 /* HomeViewController.swift */,
 				3BEC49542805C461001D40C0 /* LikeViewController.swift */,
+				3BEC49562805D2FA001D40C0 /* MypageViewController.swift */,
+				3BEC495E28079192001D40C0 /* MainTabBarViewController.swift */,
+				3BEC496028098ED6001D40C0 /* HomeViewTableViewCell.swift */,
+				3BEC4962280997F4001D40C0 /* PostViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		3BEC49592806F529001D40C0 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				3BD6643427FB1E6A00B86765 /* HotpepperAPI.swift */,
+				3BEC495A2806F55B001D40C0 /* ImageUploader.swift */,
+				3BF9EE05280E2A0200D06661 /* PostService.swift */,
+				3BF9EE072810463200D06661 /* UserService.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		3BF9EE02280C1F0500D06661 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3BF9EE03280C1F2C00D06661 /* FirebaseStorage.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3BF9EE09281046B200D06661 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3BF9EE0A281046F200D06661 /* Constants.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		88A01E60ADC0611285E00457 /* Frameworks */ = {
@@ -165,7 +250,6 @@
 				3B946F7027F0C4CD0018B4A8 /* Frameworks */,
 				3B946F7127F0C4CD0018B4A8 /* Resources */,
 				CB831E05EF6591C634D218A8 /* [CP] Embed Pods Frameworks */,
-				98B3A57127D37F275FAC887A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -245,23 +329,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		98B3A57127D37F275FAC887A /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ramentabetai/Pods-ramentabetai-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ramentabetai/Pods-ramentabetai-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ramentabetai/Pods-ramentabetai-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		CB831E05EF6591C634D218A8 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -289,14 +356,29 @@
 				3BD6643727FB1E6A00B86765 /* ShopModel.swift in Sources */,
 				3B946F7B27F0C4CD0018B4A8 /* SignUpViewController.swift in Sources */,
 				3B946F8E27F0CF330018B4A8 /* UIColor-Extension.swift in Sources */,
+				3B30A10D28116CFE00ED1F01 /* ProfileCell.swift in Sources */,
+				3BEC4963280997F4001D40C0 /* PostViewController.swift in Sources */,
+				3BEC49572805D2FA001D40C0 /* MypageViewController.swift in Sources */,
 				3BEC494C27FB4DDA001D40C0 /* SearchViewController.swift in Sources */,
 				3B946F7727F0C4CD0018B4A8 /* AppDelegate.swift in Sources */,
+				3B30A10F28116D0E00ED1F01 /* ProfileHeader.swift in Sources */,
 				3BEC494E27FB4DEB001D40C0 /* ShopTableViewCell.swift in Sources */,
+				3B30A11128121FA100ED1F01 /* ProfileCollectionViewController.swift in Sources */,
+				3BDD821228158A1300D0136A /* ProfileHeaderViewModel.swift in Sources */,
+				3BEC495B2806F55B001D40C0 /* ImageUploader.swift in Sources */,
+				3BEC495F28079192001D40C0 /* MainTabBarViewController.swift in Sources */,
+				3B30A10928105B9600ED1F01 /* User.swift in Sources */,
 				3BD6643A27FB1EC500B86765 /* ShopViewModel.swift in Sources */,
+				3BF9EE0B281046F200D06661 /* Constants.swift in Sources */,
 				3BEC49532805C453001D40C0 /* HomeViewController.swift in Sources */,
 				3BBE340627F602EC00C6C676 /* LoginViewController.swift in Sources */,
 				3BD6643627FB1E6A00B86765 /* HotpepperAPI.swift in Sources */,
+				3BF9EE06280E2A0200D06661 /* PostService.swift in Sources */,
+				3BEC496128098ED6001D40C0 /* HomeViewTableViewCell.swift in Sources */,
+				3B30A11328138A2700ED1F01 /* Extensions.swift in Sources */,
+				3BF9EE082810463200D06661 /* UserService.swift in Sources */,
 				3B946F7927F0C4CD0018B4A8 /* SceneDelegate.swift in Sources */,
+				3BF9EE04280C1F2C00D06661 /* FirebaseStorage.swift in Sources */,
 				3BEC49552805C461001D40C0 /* LikeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

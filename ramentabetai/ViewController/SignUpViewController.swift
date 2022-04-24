@@ -8,6 +8,7 @@
 import UIKit
 import FirebaseAuth
 import FirebaseFirestore
+import FirebaseDatabase
 import PKHUD
 
 class SignUpViewController: UIViewController {
@@ -67,8 +68,7 @@ class SignUpViewController: UIViewController {
         guard let uid = Auth.auth().currentUser?.uid else {return}
         guard let name = self.usernameTextField.text else {return}
         
-        let userRef = Firestore.firestore().collection("users").document(uid)
-        
+        let userRef = COLLECTION_USERS.document(uid)
         let docData = ["email": email, "name": name, "createdAt": Timestamp()] as [String : Any]
         // Firestoreにユーザ情報を格納
         userRef.setData(docData) { (err) in

@@ -19,12 +19,12 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        loginButton.layer.cornerRadius = 10
-        loginButton.isEnabled = false
-        loginButton.backgroundColor = UIColor.rgb(red: 255, green: 221, blue: 187)
+        loginButton?.layer.cornerRadius = 10
+        loginButton?.isEnabled = false
+        loginButton?.backgroundColor = UIColor.rgb(red: 255, green: 221, blue: 187)
         
-        emailTextField.delegate = self
-        passwordTextField.delegate = self
+        emailTextField?.delegate = self
+        passwordTextField?.delegate = self
     }
     
     @IBAction func tappedLoginButton(_ sender: Any) {

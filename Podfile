@@ -10,6 +10,9 @@ target 'ramentabetai' do
   pod 'Firebase/Auth'
   pod 'Firebase/Firestore'
   pod 'Firebase/Storage'
+  pod 'Firebase/Database'
 
   pod 'PKHUD'
+  
+  pod 'YPImagePicker'
 end
