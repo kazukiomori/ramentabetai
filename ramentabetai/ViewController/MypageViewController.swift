@@ -14,7 +14,7 @@ class MypageViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     
     var user:User? {
-        didSet { navigationItem.title = user?.name}
+        didSet { collectionView.reloadData() }
     }
 
     override func viewDidLoad() {
@@ -27,6 +27,7 @@ class MypageViewController: UIViewController {
         
         collectionView.register(ProfileCell.self, forCellWithReuseIdentifier: "ProfileCell")
         collectionView.register(ProfileHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "ProfileHeader")
+//        checkIfUserIsFollowed()
         
     }
     
@@ -37,16 +38,15 @@ class MypageViewController: UIViewController {
     func fetchUser() {
         UserService.fetchUser { user in
             self.user = user
+            self.navigationItem.title = user.name
         }
     }
     
-//    func configureCollectionView() {
-//        collectionView.backgroundColor = .white
-//        collectionView.register(ProfileCell.self,
-//                                forCellWithReuseIdentifier: cellIdentifer)
-//        collectionView.register(ProfileHeader.self,
-//                                forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
-//                                withReuseIdentifier: headerIdentifer)
+//    func checkIfUserIsFollowed() {
+//        UserService.checkIfUserIsFollowed(uid: user!.uid) { isFolliwd in
+//            self.user?.isFollowed = isFolliwd
+//            self.collectionView.reloadData()
+//        }
 //    }
 }
 
@@ -65,16 +65,23 @@ extension MypageViewController: UICollectionViewDelegate, UICollectionViewDataSo
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "ProfileHeader", for: indexPath) as! ProfileHeader
-//        header.profileImage.image = UIImage(named: "userProfile")
-//        header.setCellWithValueOf()
+
+        header.delegate = self
+        if let user = user {
+            header.viewModel = ProfileHeaderViewModel(user: user)
+        }
         return header
     }
 }
 
 extension MypageViewController: UICollectionViewDelegateFlowLayout {
     
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 1
+        return 0
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
@@ -88,5 +95,23 @@ extension MypageViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
         return CGSize(width: view.frame.width, height: 240)
+    }
+}
+
+extension MypageViewController: ProfileHeaderDelegate {
+    func header(_ profileHeader: ProfileHeader, didTapActionButtonFor user: User) {
+        if user.isCurrentUser {
+            
+        } else if user.isFollowed {
+            UserService.unfollow(uid: user.uid) { error in
+                self.user?.isFollowed = false
+                self.collectionView.reloadData()
+            }
+        } else {
+            UserService.follow(uid: user.uid) { error in
+                self.user?.isFollowed = true
+                self.collectionView.reloadData()
+            }
+        }
     }
 }

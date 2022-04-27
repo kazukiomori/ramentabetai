@@ -6,6 +6,11 @@
 //
 
 import UIKit
+import SDWebImage
+
+protocol ProfileHeaderDelegate: class {
+    func  header(_ profileHeader: ProfileHeader, didTapActionButtonFor user: User)
+}
 
 class ProfileHeader: UICollectionReusableView {
     
@@ -15,9 +20,13 @@ class ProfileHeader: UICollectionReusableView {
         didSet { configure() }
     }
     
+    weak var delegate: ProfileHeaderDelegate?
+    
     private let profileImageView: UIImageView = {
         let iv = UIImageView()
-        iv.image = UIImage(named: "userProfile")
+        if iv.image == nil {
+            iv.image = UIImage(named: "userProfile")
+        }
         iv.contentMode = .scaleAspectFill
         iv.clipsToBounds = true
         return iv
@@ -38,7 +47,7 @@ class ProfileHeader: UICollectionReusableView {
         button.layer.borderWidth = 0.5
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 14)
         button.setTitleColor(.black, for: .normal)
-        button.addTarget(self, action: #selector(handleEditUserProfile), for: .touchUpInside)
+        button.addTarget(self, action: #selector(handleEditUserProfileFollowTapped), for: .touchUpInside)
         return button
     }()
     
@@ -94,12 +103,22 @@ class ProfileHeader: UICollectionReusableView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    @objc func handleEditUserProfile() {
-        print("edit user profile button tapped")
+    @objc func handleEditUserProfileFollowTapped() {
+        guard let viewModel = viewModel else { return }
+        delegate?.header(self, didTapActionButtonFor: viewModel.user)
     }
     
     func configure() {
+        guard let viewModel = viewModel else { return }
+        nameLabel.text = viewModel.name
         
+        if viewModel.profileImageUrl != nil {
+            profileImageView.sd_setImage(with: viewModel.profileImageUrl)
+        }
+        
+        editUserProfileButton.setTitle(viewModel.followButtonText, for: .normal)
+        editUserProfileButton.setTitleColor(viewModel.followButtonTextColor, for: .normal)
+        editUserProfileButton.backgroundColor = viewModel.followButtonBackgroundColor
     }
     
     func attributedStatText(value: Int, label: String) -> NSAttributedString {

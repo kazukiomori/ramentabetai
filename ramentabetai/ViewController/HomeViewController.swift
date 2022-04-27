@@ -17,7 +17,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func viewDidLoad() {
         super.viewDidLoad()
         self.HomeViewTableView.dataSource = self
-
+        self.checkIfUserIsLogin()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -26,9 +26,12 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     func checkIfUserIsLogin() {
         if Auth.auth().currentUser == nil {
+            DispatchQueue.main.async {
                 let loginVC = LoginViewController()
+                loginVC.delegate = self
                 loginVC.modalPresentationStyle = .fullScreen
                 self.present(loginVC, animated: false, completion: nil)
+            }
         }
     }
     // テーブルビューのセクション数を返す
@@ -43,5 +46,11 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "HomeViewTableViewCell", for: indexPath) as! HomeViewTableViewCell
         return cell
+    }
+}
+
+extension HomeViewController: AuthenticationDelegate {
+    func  authenticationDidComplete() {
+        print("ログインに成功しました")
     }
 }

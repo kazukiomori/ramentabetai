@@ -10,11 +10,17 @@ import Firebase
 import FirebaseAuth
 import PKHUD
 
+protocol AuthenticationDelegate: class {
+    func authenticationDidComplete()
+}
+
 class LoginViewController: UIViewController {
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var loginButton: UIButton!
+    
+    weak var delegate: AuthenticationDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,7 +59,7 @@ class LoginViewController: UIViewController {
                     return
                 }
             }
-            print("ログインに成功しました")
+            self.delegate?.authenticationDidComplete()
         }
     }
     

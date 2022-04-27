@@ -15,4 +15,6 @@ target 'ramentabetai' do
   pod 'PKHUD'
   
   pod 'YPImagePicker'
+  
+  pod 'SDWebImage'
 end
