@@ -38,7 +38,16 @@ class PostViewController: UIViewController{
         self.dismiss(animated: true, completion: nil)
     }
     @IBAction func tappedPostButton(_ sender: Any) {
-        PostService.uploadePost(shopName: shopNameTextField.text!, caption: captionTextField.text!, image: imageView.image! )
+        guard let shopName = shopNameTextField.text else {return}
+        guard let caption = captionTextField.text else {return}
+        guard let image = imageView.image else {return}
+        PostService.uploadePost(shopName: shopName, caption: caption, image: image) { error in
+            if let error = error {
+                print("Faild to upload post\(error.localizedDescription)")
+                return
+            }
+            self.dismiss(animated: true, completion: nil)
+        }
     }
     
     @IBAction func pickImage(_ sender: Any) {

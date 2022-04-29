@@ -69,7 +69,7 @@ class SignUpViewController: UIViewController {
         guard let name = self.usernameTextField.text else {return}
         
         let userRef = COLLECTION_USERS.document(uid)
-        let docData = ["email": email, "name": name, "createdAt": Timestamp()] as [String : Any]
+        let docData = ["email": email, "name": name, "createdAt": Timestamp(), "uid": uid] as [String : Any]
         // Firestoreにユーザ情報を格納
         userRef.setData(docData) { (err) in
             if let err = err {

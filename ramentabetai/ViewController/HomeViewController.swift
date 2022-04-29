@@ -13,16 +13,25 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     @IBOutlet weak var HomeViewTableView: UITableView!
     
-
+    private var posts = [Post]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.HomeViewTableView.dataSource = self
         self.checkIfUserIsLogin()
+        fetchPosts()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         checkIfUserIsLogin()
+    }
+    
+    func fetchPosts() {
+        PostService.fetchPosts { posts in
+            self.posts = posts
+            
+        }
     }
     func checkIfUserIsLogin() {
         if Auth.auth().currentUser == nil {
@@ -52,5 +61,6 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 extension HomeViewController: AuthenticationDelegate {
     func  authenticationDidComplete() {
         print("ログインに成功しました")
+        
     }
 }
